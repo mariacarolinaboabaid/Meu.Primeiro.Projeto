@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+
+:root{
+    --cor1: #223D2C;
+    --cor2: #427555;
+    --cor3: #65B583;
+    --cor4: #7BDB9E;
+    --cor5: #89F5B1;
+  
+    --fonte1: 'Rubik', sans-serif;
+    --fonte2: 'Quicksand', sans-serif;
+    --fonte3: 'Petit Formal Script', cursive;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: var(--cor6);
+}
+header{
+    background-image: linear-gradient(to bottom, white, var(--cor4));
+    color: var(--cor1);
+    font-family: var(--fonte3);
+    text-align: center;
+}
+header h1{
+    padding-top: 25px;
+    font-size: 60px;
+    text-shadow: 0px 3px 5px var(--cor2);
+}
+header p{
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+nav{
+    background-color: var(--cor4);
+    text-align: center;
+    box-shadow: 1px 1px 1px var(--cor1);
+    padding-bottom: 8px;
+}
+nav a{
+    font-family: var(--fonte2);
+    color: var(--cor1);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px;
+}
+nav a:hover{
+    text-decoration: underline;
+    background-color: var(--cor5);
+    border-radius: 10px;
+    transition-duration: 1s;
+}
