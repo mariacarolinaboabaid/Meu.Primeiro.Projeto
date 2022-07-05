@@ -14,40 +14,58 @@
         <p>Sua saúde em dia</p>
     </header>
     <nav>
-        <a href="#">MENU</a>
-        <a href="#">ARTIGOS</a>
-        <a href="#">RECEITAS</a>
-        <a href="#">CONSULTAS</a>
-        <a href="#">SOBRE NÓS</a>
-        <a href="#">CONTATO</a>
+        <a href="#" rel="next">MENU</a>
+        <a href="#" rel="next">ARTIGOS</a>
+        <a href="#" rel="next">RECEITAS</a>
+        <a href="#" rel="next">CONSULTAS</a>
+        <a href="#" rel="next">SOBRE NÓS</a>
+        <a href="#" rel="next">CONTATO</a>
     </nav>
     <main>
-        <section>
-            Agendar Consulta
+         <section id="box_consulta">
+            <a href="#" rel="next"><h2>AGENDAR CONSULTA</h2></a>
             <p>Clique aqui para agendar a sua consulta</p>
         </section>
 
-        <section>Receitas</section>
+        <section id="box_sobrenos">
+            <a href="#" rel="next"><h2 id="h2_sobrenos">SOBRE NÓS</h2></a>
+            <p id="p_sobrenos">Descubra quem são os nossos profissionais</p>
+        </section>
 
-        <div>
+        <section id="box_receita">
+            <a href="#" rel="next"><h2>RECEITAS</h2></a>
+            <p>Clique aqui para acessar receitas fáceis, saudáveis e gostosas</p>
+        </section>
+
+        <section id="box_video">
+            <h2>COMO A NOSSA ALIMENTAÇÃO AFETA A NOSSA SAÚDE MENTAL?</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/KFowNIMdLiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <section>Sobre Nós</section>
-
-        <aside>
-            <div>Propaganda 1</div>
-        </aside>
-
-        <aside>
-            <div>Propaganda 2</div>
-        </aside>
+        </section>
     </main>
+    <aside>
+            
+                <div id="propaganda1">
+                    <a href="#" rel="external" target="_blank">
+                        <p class="destaque1">The Best Whey </p>
+                        <p>25g de Proteína</p>
+                        <p class="destaque2">Por apenas R$ 180,00</p>
+                        <img src="imagens/propaganda.png" alt="Propaganda Whey">
+                    </a>
+                </div>
 
+                <div id="propaganda2">
+                    <a href="#" rel="external" target="_blank">
+                        <p class="destaque1"> Revivia</p>
+                        <p>Vitamina B12 de 1.000g</p>
+                        <p class="destaque2">Por apenas R$ 130,00</p>
+                        <img src="imagens/propaganda2.webp" alt="Propagnda Vitamina B12">
+                    </a>
+                </div>
+    </aside>
     <footer>
-        Site da Clínica Nutrir-se <br>
-        (048) 3266-4203 <br>
-        Avenida dos Palermos, 333, Sala 1002, Centro, Florianópolis/SC, CEP 88053-430
+        <h3>Clínica Nutrir-se </h3>
+        <p>(048) 3266-4203 <br>
+        Avenida dos Palermos, nº 333, Sala 1002, Centro, Florianópolis/SC, CEP 88053-430</p>
     </footer>
 
 </body>

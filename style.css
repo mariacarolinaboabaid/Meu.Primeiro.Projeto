@@ -1,51 +1,57 @@
 @charset "UTF-8";
-
+/* FONTES */ 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
-
+/* VARIÁVEIS */ 
 :root{
-    --cor1: #223D2C;
-    --cor2: #427555;
-    --cor3: #65B583;
-    --cor4: #7BDB9E;
-    --cor5: #89F5B1;
+    --cor1: #C0FACA;
+    --cor2: #012622;
+    --cor3: #003B36;
+    --cor4: #1DD3B0;
+    --cor5: #E0CCDF;
+    --cor6: #2ec6a877;
   
     --fonte1: 'Rubik', sans-serif;
     --fonte2: 'Quicksand', sans-serif;
     --fonte3: 'Petit Formal Script', cursive;
 }
+/* GLOBAL */ 
 * {
     padding: 0px;
     margin: 0px;
 }
+/* COR DO CORPO DO SITE*/ 
 body{
-    background-color: var(--cor6);
+    background-color: var(--cor5)
 }
+/* CABEÇALHO */ 
 header{
-    background-image: linear-gradient(to bottom, white, var(--cor4));
-    color: var(--cor1);
+    background-image: linear-gradient(to bottom, var(--cor2
+    ), var(--cor3));
+    color: var(--cor4);
     font-family: var(--fonte3);
     text-align: center;
 }
 header h1{
     padding-top: 25px;
     font-size: 60px;
-    text-shadow: 0px 3px 5px var(--cor2);
+    text-shadow: 2px 0px 0px white;
 }
 header p{
     padding-top: 15px;
     padding-bottom: 30px;
 }
+/* MENU NAVEGAÇÃO */ 
 nav{
-    background-color: var(--cor4);
+    background-color: var(--cor3);
     text-align: center;
-    box-shadow: 1px 1px 1px var(--cor1);
-    padding-bottom: 8px;
+    padding: 12px 0px;
+    box-shadow: 0px 2px 3px black;
 }
 nav a{
     font-family: var(--fonte2);
-    color: var(--cor1);
+    color: white;
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
@@ -53,7 +59,133 @@ nav a{
 }
 nav a:hover{
     text-decoration: underline;
-    background-color: var(--cor5);
+    background-color: var(--cor2);
     border-radius: 10px;
     transition-duration: 1s;
+}
+/* PRINCIPAL */ 
+main{
+    width: 80vw;
+}
+section{
+    border: 2px solid var(--cor4);
+    border-radius: 10px;
+    margin: 50px 0px 50px 20px;
+    height: 160px;
+    max-width: 900px;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-family: var(--fonte2);
+    line-height: 2.4em;
+}
+main section a{
+    text-decoration: none;
+}
+main section a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+}
+main section h2{
+    font-size: 16px;
+    background-color:var(--cor6);
+    color: var(--cor2);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-indent: 6px;
+}
+main section p{
+    color: var(--cor2);
+    font-size: 14px;
+    background-color: var(--cor6);
+    text-indent: 6px;
+}
+/* SEÇÕES PARTICULARIDADES */ 
+section#box_consulta{
+    background: white url("imagens/agenda.webp") center center no-repeat scroll;
+    background-size: cover;
+}
+section#box_receita{
+    background: white url("imagens/receitas.jpeg") center center no-repeat scroll;
+    background-size: cover;
+}
+section#box_video{
+    background-color:var(--cor6);
+    position: relative;
+    height: 440px
+}
+section#box_video > iframe{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    transform: translate(-50%, -80%); 
+}
+section#box_sobrenos{
+    background: var(--cor6) url("imagens/nutricionista.jpeg") left top no-repeat scroll;
+    background-size: contain;
+}
+h2#h2_sobrenos, p#p_sobrenos{
+    margin-left: 247px;
+}
+/* RODAPÉ */
+footer{
+    background-color: var(--cor3);
+    text-align: center;
+    font-family: var(--fonte2);
+    font-size: 12px;
+    color:white;
+    line-height: 2em;
+    padding: 8px;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.58);
+}
+/* ASIDES*/
+aside{
+    border: 1px solid black;
+}
+aside div a{
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--fonte2);
+    font-size: 12px;
+    color:black;
+    line-height: 2em; 
+}
+aside div a:hover{
+    text-decoration: underline;
+    color: red;
+    font-weight: 600;
+    font-size: 14.5px;
+}
+aside div{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.56);
+    border: 1px solid white;
+    border-radius: 10px;
+    max-height: 28vh;
+    max-width: 20vw;
+    position: fixed;
+}
+#propaganda1{
+    top: 220px;
+    right: 30px;
+}
+#propaganda2{
+    height: 26vh;
+    top: 430px;
+    right: 30px;
+}
+.destaque1{
+    text-decoration: underline;
+    font-weight: 600;
+}
+.destaque2{
+    color: red;
+    font-weight: 600;
+}
+img{
+    position: absolute;
+    width: 27%;
+    margin-top: 26px;
+    margin-left: 103px;
 }
