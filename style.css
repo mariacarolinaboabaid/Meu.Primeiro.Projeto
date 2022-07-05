@@ -144,7 +144,7 @@ aside div a{
     text-decoration: none;
     text-align: center;
     font-family: var(--fonte2);
-    font-size: 12px;
+    font-size: 1vw;
     color:black;
     line-height: 2em; 
 }
@@ -152,7 +152,6 @@ aside div a:hover{
     text-decoration: underline;
     color: red;
     font-weight: 600;
-    font-size: 14.5px;
 }
 #propaganda{
     background-color: #a297a164;
@@ -163,7 +162,7 @@ aside div a:hover{
     width: 20vw;
     position: fixed;
     right: 18px;
-    top: 255px;
+    top: 280px;
 }
 .destaque1{
     text-decoration: underline;
@@ -175,4 +174,5 @@ aside div a:hover{
 }
 img{
     width: 27%; 
+    padding-top: 18px;
 }
