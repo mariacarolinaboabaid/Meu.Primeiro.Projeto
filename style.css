@@ -65,7 +65,7 @@ nav a:hover{
 }
 /* PRINCIPAL */ 
 main{
-    width: 80vw;
+    max-width: 73vw;
 }
 section{
     border: 2px solid var(--cor4);
@@ -122,11 +122,11 @@ section#box_video > iframe{
     transform: translate(-50%, -80%); 
 }
 section#box_sobrenos{
-    background: var(--cor6) url("imagens/nutricionista.jpeg") left top no-repeat scroll;
+    background: var(--cor6) url("imagens/nutricionista.jpeg") right top no-repeat scroll;
     background-size: contain;
 }
 h2#h2_sobrenos, p#p_sobrenos{
-    margin-left: 247px;
+    width: 70.8%
 }
 /* RODAPÉ */
 footer{
@@ -140,9 +140,6 @@ footer{
     box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.58);
 }
 /* ASIDES*/
-aside{
-    border: 1px solid black;
-}
 aside div a{
     text-decoration: none;
     text-align: center;
@@ -157,23 +154,16 @@ aside div a:hover{
     font-weight: 600;
     font-size: 14.5px;
 }
-aside div{
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.56);
-    border: 1px solid white;
-    border-radius: 10px;
-    max-height: 28vh;
-    max-width: 20vw;
+#propaganda{
+    background-color: #a297a164;
+    border-radius: 40px;
+    border: 1px solid #a297a164;
+    text-align: center;
+    height: 30vh;
+    width: 20vw;
     position: fixed;
-}
-#propaganda1{
-    top: 220px;
-    right: 30px;
-}
-#propaganda2{
-    height: 26vh;
-    top: 430px;
-    right: 30px;
+    right: 18px;
+    top: 255px;
 }
 .destaque1{
     text-decoration: underline;
@@ -184,8 +174,5 @@ aside div{
     font-weight: 600;
 }
 img{
-    position: absolute;
-    width: 27%;
-    margin-top: 26px;
-    margin-left: 103px;
+    width: 27%; 
 }
